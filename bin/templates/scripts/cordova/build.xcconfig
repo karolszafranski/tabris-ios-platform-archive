@@ -22,6 +22,8 @@
 // Settings are overridden by configuration-level .xcconfig file (build-release/build-debug).
 //
 
+VALID_ARCHS = armv7 arm64 x86_64
+
 HEADER_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/usr/local/lib/include" "$(OBJROOT)/UninstalledProducts/include" "$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include" "$(BUILT_PRODUCTS_DIR)"
 OTHER_LDFLAGS = -ObjC
 
