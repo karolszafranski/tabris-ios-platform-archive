@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		0D606FA51F7BA02F00963A9F /* CordovaPluginBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D606FA21F7BA02E00963A9F /* CordovaPluginBridge.m */; };
+		0D606FA61F7BA02F00963A9F /* CordovaConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D606FA41F7BA02E00963A9F /* CordovaConfig.m */; };
+		0D606FAB1F7BA08100963A9F /* WebViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D606FA71F7BA07F00963A9F /* WebViewProxy.m */; };
+		0D606FAC1F7BA08100963A9F /* CordovaPluginLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D606FA81F7BA08000963A9F /* CordovaPluginLoader.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -43,6 +47,14 @@
 
 /* Begin PBXFileReference section */
 		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "__PROJECT_NAME__/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		0D606F9C1F7BA02D00963A9F /* CordovaPluginBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CordovaPluginBridge.h; sourceTree = "<group>"; };
+		0D606FA21F7BA02E00963A9F /* CordovaPluginBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CordovaPluginBridge.m; sourceTree = "<group>"; };
+		0D606FA31F7BA02E00963A9F /* CordovaConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CordovaConfig.h; sourceTree = "<group>"; };
+		0D606FA41F7BA02E00963A9F /* CordovaConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CordovaConfig.m; sourceTree = "<group>"; };
+		0D606FA71F7BA07F00963A9F /* WebViewProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewProxy.m; sourceTree = "<group>"; };
+		0D606FA81F7BA08000963A9F /* CordovaPluginLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CordovaPluginLoader.m; sourceTree = "<group>"; };
+		0D606FA91F7BA08000963A9F /* CordovaPluginLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CordovaPluginLoader.h; sourceTree = "<group>"; };
+		0D606FAA1F7BA08000963A9F /* WebViewProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewProxy.h; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* __PROJECT_NAME__.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "__PROJECT_NAME__.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +97,14 @@
 				302D95F014D2391D003F00A1 /* MainViewController.xib */,
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
+				0D606FA31F7BA02E00963A9F /* CordovaConfig.h */,
+				0D606FA41F7BA02E00963A9F /* CordovaConfig.m */,
+				0D606F9C1F7BA02D00963A9F /* CordovaPluginBridge.h */,
+				0D606FA21F7BA02E00963A9F /* CordovaPluginBridge.m */,
+				0D606FA91F7BA08000963A9F /* CordovaPluginLoader.h */,
+				0D606FA81F7BA08000963A9F /* CordovaPluginLoader.m */,
+				0D606FAA1F7BA08000963A9F /* WebViewProxy.h */,
+				0D606FA71F7BA07F00963A9F /* WebViewProxy.m */,
 			);
 			name = Classes;
 			path = "__PROJECT_NAME__/Classes";
@@ -306,6 +326,10 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				0D606FAB1F7BA08100963A9F /* WebViewProxy.m in Sources */,
+				0D606FA51F7BA02F00963A9F /* CordovaPluginBridge.m in Sources */,
+				0D606FAC1F7BA08100963A9F /* CordovaPluginLoader.m in Sources */,
+				0D606FA61F7BA02F00963A9F /* CordovaConfig.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
