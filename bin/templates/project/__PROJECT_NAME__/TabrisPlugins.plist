@@ -4,6 +4,7 @@
 <dict>
 	<key>classes</key>
 	<array>
+		<string>CordovaPluginBridge</string>
 	</array>
 </dict>
 </plist>
