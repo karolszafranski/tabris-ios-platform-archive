@@ -12,6 +12,8 @@
 		0D606FA61F7BA02F00963A9F /* CordovaConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D606FA41F7BA02E00963A9F /* CordovaConfig.m */; };
 		0D606FAB1F7BA08100963A9F /* WebViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D606FA71F7BA07F00963A9F /* WebViewProxy.m */; };
 		0D606FAC1F7BA08100963A9F /* CordovaPluginLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D606FA81F7BA08000963A9F /* CordovaPluginLoader.m */; };
+		0DCB57161FB1A5EE003C6A6B /* Tabris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCB57131FB1A5D7003C6A6B /* Tabris.framework */; };
+		0DCB57171FB1A5EE003C6A6B /* Tabris.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCB57131FB1A5D7003C6A6B /* Tabris.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -45,6 +47,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0DCB57181FB1A5EE003C6A6B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0DCB57171FB1A5EE003C6A6B /* Tabris.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "__PROJECT_NAME__/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 		0D606F9C1F7BA02D00963A9F /* CordovaPluginBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CordovaPluginBridge.h; sourceTree = "<group>"; };
@@ -55,6 +71,7 @@
 		0D606FA81F7BA08000963A9F /* CordovaPluginLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CordovaPluginLoader.m; sourceTree = "<group>"; };
 		0D606FA91F7BA08000963A9F /* CordovaPluginLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CordovaPluginLoader.h; sourceTree = "<group>"; };
 		0D606FAA1F7BA08000963A9F /* WebViewProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewProxy.h; sourceTree = "<group>"; };
+		0DCB57131FB1A5D7003C6A6B /* Tabris.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Tabris.framework; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* __PROJECT_NAME__.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "__PROJECT_NAME__.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				0DCB57161FB1A5EE003C6A6B /* Tabris.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +128,14 @@
 			path = "__PROJECT_NAME__/Classes";
 			sourceTree = SOURCE_ROOT;
 		};
+		0DCB57121FB1A5D7003C6A6B /* Tabris */ = {
+			isa = PBXGroup;
+			children = (
+				0DCB57131FB1A5D7003C6A6B /* Tabris.framework */,
+			);
+			path = Tabris;
+			sourceTree = "<group>";
+		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +151,7 @@
 				EB87FDF31871DA8E0020F90C /* www */,
 				EB87FDF11871DA420020F90C /* Staging */,
 				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				0DCB57121FB1A5D7003C6A6B /* Tabris */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				307C750510C5A3420062BCA9 /* Plugins */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -213,6 +240,7 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				0DCB57181FB1A5EE003C6A6B /* Embed Frameworks */,
 				0DCB57271FB1BF8D003C6A6B /* ShellScript */,
 			);
 			buildRules = (
@@ -357,6 +385,10 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tabris",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "__PROJECT_NAME__/__PROJECT_NAME__-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
@@ -380,6 +412,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tabris",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "__PROJECT_NAME__/__PROJECT_NAME__-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
