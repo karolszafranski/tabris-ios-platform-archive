@@ -56,6 +56,7 @@ function copyJsAndCordovaLib (projectPath, projectName, use_shared, config) {
         shell.mkdir('-p', path.join(projectPath, 'CordovaLib', 'CordovaLib.xcodeproj'));
         shell.cp('-f', path.join(r, '.gitignore'), projectPath);
         shell.cp('-rf', path.join(ROOT, 'CordovaLib', 'Classes'), path.join(projectPath, 'CordovaLib'));
+        shell.cp('-rf', path.join(ROOT, 'tabris-ios'), path.join(projectPath, '/'));
         shell.cp('-f', path.join(ROOT, 'CordovaLib', 'VERSION'), path.join(projectPath, 'CordovaLib'));
         shell.cp('-f', path.join(ROOT, 'CordovaLib', 'cordova.js'), path.join(projectPath, 'CordovaLib'));
         shell.cp('-f', path.join(ROOT, 'CordovaLib', 'CordovaLib_Prefix.pch'), path.join(projectPath, 'CordovaLib'));
