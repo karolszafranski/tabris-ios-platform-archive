@@ -25,9 +25,8 @@
 //  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
 //
 
-#import <Cordova/CDVViewController.h>
-#import <Cordova/CDVAppDelegate.h>
+#import <Tabris/TabrisClientAppDelegate.h>
 
-@interface AppDelegate : CDVAppDelegate {}
+@interface AppDelegate : TabrisClientAppDelegate {}
 
 @end
