@@ -53,11 +53,22 @@ if [ ! -f "$TABRIS_JS_CORDOVA_PARENT_DIR/tabris-js-cordova/build/cordova.ios.js"
 	exit_if_command_fail ./build.sh
 fi
 
+# build tabris-ios if needed
+if [ ! -d "$TABRIS_IOS_PARENT_DIR/tabris-ios/artifacts/Release-fat/Tabris.framework" ]; then
+	log_and_execute cd $TABRIS_IOS_PARENT_DIR/tabris-ios/scripts
+	log_execution "./build.sh"
+	exit_if_command_fail ./build.sh
+fi
+
 # mkdir artifacts
 log_and_execute cd $PWD
 
 # copy cordova-ios
 log_and_execute cp -R $CORDOVA_IOS_PARENT_DIR/cordova-ios $ARTIFACTS_DIR/tabris-ios
+
+# copy Tabris.framework
+log_and_execute mkdir $ARTIFACTS_DIR/tabris-ios/Tabris
+log_and_execute cp -R $TABRIS_IOS_PARENT_DIR/tabris-ios/artifacts/Release-fat/Tabris.framework $ARTIFACTS_DIR/tabris-ios/Tabris/
 
 # store tabris-ios secure constants in encrypted file
 if [ X"$SECURE_BUILD" = X"true" ]; then
