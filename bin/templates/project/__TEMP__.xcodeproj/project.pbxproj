@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
-		0D0956BB1F7E7A6000FC48F8 /* Tabris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0956B41F7E7A1E00FC48F8 /* Tabris.framework */; };
-		0D0956BC1F7E7A6000FC48F8 /* Tabris.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0956B41F7E7A1E00FC48F8 /* Tabris.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0D606FA51F7BA02F00963A9F /* CordovaPluginBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D606FA21F7BA02E00963A9F /* CordovaPluginBridge.m */; };
 		0D606FA61F7BA02F00963A9F /* CordovaConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D606FA41F7BA02E00963A9F /* CordovaConfig.m */; };
 		0D606FAB1F7BA08100963A9F /* WebViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D606FA71F7BA07F00963A9F /* WebViewProxy.m */; };
@@ -31,41 +29,6 @@
 			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = CordovaLib;
 		};
-		0D0956B31F7E7A1E00FC48F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0D0956AC1F7E7A1C00FC48F8 /* Tabris.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0D65A3621F7A7C6300029292;
-			remoteInfo = Tabris;
-		};
-		0D0956B51F7E7A1E00FC48F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0D0956AC1F7E7A1C00FC48F8 /* Tabris.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0D65A36B1F7A7C6300029292;
-			remoteInfo = TabrisTests;
-		};
-		0D0956B71F7E7A1E00FC48F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0D0956AC1F7E7A1C00FC48F8 /* Tabris.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0D606F531F7B8F3200963A9F;
-			remoteInfo = TabrisTestsHostApp;
-		};
-		0D0956B91F7E7A2600FC48F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0D0956AC1F7E7A1C00FC48F8 /* Tabris.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 0D65A3611F7A7C6300029292;
-			remoteInfo = Tabris;
-		};
-		0D0956BD1F7E7A6000FC48F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0D0956AC1F7E7A1C00FC48F8 /* Tabris.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 0D65A3611F7A7C6300029292;
-			remoteInfo = Tabris;
-		};
 		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
@@ -82,23 +45,8 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		0D0956BF1F7E7A6100FC48F8 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0D0956BC1F7E7A6000FC48F8 /* Tabris.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "__PROJECT_NAME__/Images.xcassets"; sourceTree = SOURCE_ROOT; };
-		0D0956AC1F7E7A1C00FC48F8 /* Tabris.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Tabris.xcodeproj; path = "tabris-ios/Tabris/Tabris.xcodeproj"; sourceTree = "<group>"; };
 		0D606F9C1F7BA02D00963A9F /* CordovaPluginBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CordovaPluginBridge.h; sourceTree = "<group>"; };
 		0D606FA21F7BA02E00963A9F /* CordovaPluginBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CordovaPluginBridge.m; sourceTree = "<group>"; };
 		0D606FA31F7BA02E00963A9F /* CordovaConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CordovaConfig.h; sourceTree = "<group>"; };
@@ -135,7 +83,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
-				0D0956BB1F7E7A6000FC48F8 /* Tabris.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,16 +110,6 @@
 			path = "__PROJECT_NAME__/Classes";
 			sourceTree = SOURCE_ROOT;
 		};
-		0D0956AD1F7E7A1C00FC48F8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0D0956B41F7E7A1E00FC48F8 /* Tabris.framework */,
-				0D0956B61F7E7A1E00FC48F8 /* TabrisTests.xctest */,
-				0D0956B81F7E7A1E00FC48F8 /* TabrisTestsHostApp.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,7 +124,6 @@
 				EB87FDF41871DAF40020F90C /* config.xml */,
 				EB87FDF31871DA8E0020F90C /* www */,
 				EB87FDF11871DA420020F90C /* Staging */,
-				0D0956AC1F7E7A1C00FC48F8 /* Tabris.xcodeproj */,
 				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				307C750510C5A3420062BCA9 /* Plugins */,
@@ -277,15 +213,12 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
-				0D0956BF1F7E7A6100FC48F8 /* Embed Frameworks */,
 				0DCB57271FB1BF8D003C6A6B /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0D0956BA1F7E7A2600FC48F8 /* PBXTargetDependency */,
 				301BF551109A68C00062928A /* PBXTargetDependency */,
-				0D0956BE1F7E7A6000FC48F8 /* PBXTargetDependency */,
 			);
 			name = "__PROJECT_NAME__";
 			productName = "__PROJECT_NAME__";
@@ -316,10 +249,6 @@
 					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
 					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
 				},
-				{
-					ProductGroup = 0D0956AD1F7E7A1C00FC48F8 /* Products */;
-					ProjectRef = 0D0956AC1F7E7A1C00FC48F8 /* Tabris.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -329,27 +258,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		0D0956B41F7E7A1E00FC48F8 /* Tabris.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Tabris.framework;
-			remoteRef = 0D0956B31F7E7A1E00FC48F8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0D0956B61F7E7A1E00FC48F8 /* TabrisTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = TabrisTests.xctest;
-			remoteRef = 0D0956B51F7E7A1E00FC48F8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0D0956B81F7E7A1E00FC48F8 /* TabrisTestsHostApp.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = TabrisTestsHostApp.app;
-			remoteRef = 0D0956B71F7E7A1E00FC48F8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		301BF535109A57CC0062928A /* libCordova.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -429,16 +337,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0D0956BA1F7E7A2600FC48F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Tabris;
-			targetProxy = 0D0956B91F7E7A2600FC48F8 /* PBXContainerItemProxy */;
-		};
-		0D0956BE1F7E7A6000FC48F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Tabris;
-			targetProxy = 0D0956BD1F7E7A6000FC48F8 /* PBXContainerItemProxy */;
-		};
 		301BF551109A68C00062928A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CordovaLib;
