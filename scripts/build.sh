@@ -69,14 +69,6 @@ log_and_execute cp $TABRIS_JS_CORDOVA_PARENT_DIR/tabris-js-cordova/build/cordova
 log_and_execute cp $TABRIS_JS_CORDOVA_PARENT_DIR/tabris-js-cordova/src/exec-ios.js $ARTIFACTS_DIR/tabris-ios/cordova-js-src/exec.js
 log_and_execute cp $TABRIS_JS_CORDOVA_PARENT_DIR/tabris-js-cordova/src/platform-ios.js $ARTIFACTS_DIR/tabris-ios/cordova-js-src/platform.js
 
-# copy tabris-ios project to cordova-ios platform
-log_and_execute cp -R $TABRIS_IOS_PARENT_DIR/tabris-ios $ARTIFACTS_DIR/tabris-ios/
-
-# .git folder of tabris-ios project is ATM ~100MB
-if [ X"$DO_NOT_REMOVE_TABRIS_IOS_REPOSITORY" = X"false" ]; then
-  log_and_execute rm -Rf $ARTIFACTS_DIR/tabris-ios/tabris-ios/.git
-fi
-
 # store Tabris.js version in text file
 TABRIS_FRAMEWORK_INFO_PLIST="$TABRIS_IOS_PARENT_DIR/tabris-ios/Tabris/Tabris/Info.plist"
 if [ -d "$TABRIS_IOS_PARENT_DIR/tabris-ios/artifacts/Release-fat/Tabris.framework" ]; then
