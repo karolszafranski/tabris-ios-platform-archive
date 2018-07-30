@@ -48,7 +48,7 @@ static CordovaPluginBridge *bridgeInstance;
 - (id)initWithObjectId:(NSString *)objectId andClient:(TabrisClient *)client {
     self = [super initWithObjectId:objectId andClient:client];
     if( self ) {
-        WebViewProxy *webViewProxy = [[WebViewProxy alloc] initWithView:self.client.window
+        WebViewProxy *webViewProxy = [[WebViewProxy alloc] initWithView:self.client.view
                                                             andJSBinding:self.jsBinding
                                                              andBaseURL:self.client.httpClient.baseURL];
         _pluginLoader = [[CordovaPluginLoader alloc] initWithWebView:webViewProxy];
