@@ -68,4 +68,8 @@
     /* HOOK: tabrisClientWillStartExecuting */
 }
 
+- (NSArray *)localResourceRoots {
+    return @[@"www"];
+}
+
 @end
