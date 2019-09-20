@@ -38,6 +38,16 @@
                ReferencedContainer = "container:tabris-ios/Tabris/Tabris.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0DDF0F1B2334F7E500564156"
+               BuildableName = "tabris_app_test.xctest"
+               BlueprintName = "tabris_app_test"
+               ReferencedContainer = "container:__PROJECT_NAME__.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
