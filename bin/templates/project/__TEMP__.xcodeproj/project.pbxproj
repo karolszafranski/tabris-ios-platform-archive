@@ -12,7 +12,6 @@
 		0D606FA61F7BA02F00963A9F /* CordovaConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D606FA41F7BA02E00963A9F /* CordovaConfig.m */; };
 		0D606FAB1F7BA08100963A9F /* WebViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D606FA71F7BA07F00963A9F /* WebViewProxy.m */; };
 		0D606FAC1F7BA08100963A9F /* CordovaPluginLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D606FA81F7BA08000963A9F /* CordovaPluginLoader.m */; };
-		0DDF0F1F2334F7E600564156 /* tabris_app_test.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF0F1E2334F7E600564156 /* tabris_app_test.m */; };
 		0DCB57161FB1A5EE003C6A6B /* Tabris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCB57131FB1A5D7003C6A6B /* Tabris.framework */; };
 		0DCB57171FB1A5EE003C6A6B /* Tabris.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCB57131FB1A5D7003C6A6B /* Tabris.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
@@ -31,13 +30,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = CordovaLib;
-		};
-		0DDF0F212334F7E600564156 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
-			remoteInfo = "__PROJECT_NAME__";
 		};
 		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -79,9 +71,6 @@
 		0D606FA81F7BA08000963A9F /* CordovaPluginLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CordovaPluginLoader.m; sourceTree = "<group>"; };
 		0D606FA91F7BA08000963A9F /* CordovaPluginLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CordovaPluginLoader.h; sourceTree = "<group>"; };
 		0D606FAA1F7BA08000963A9F /* WebViewProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewProxy.h; sourceTree = "<group>"; };
-		0DDF0F1C2334F7E500564156 /* tabris_app_test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tabris_app_test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DDF0F1E2334F7E600564156 /* tabris_app_test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tabris_app_test.m; sourceTree = "<group>"; };
-		0DDF0F202334F7E600564156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DCB57131FB1A5D7003C6A6B /* Tabris.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Tabris.framework; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -106,13 +95,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0DDF0F192334F7E500564156 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,14 +128,6 @@
 			path = "__PROJECT_NAME__/Classes";
 			sourceTree = SOURCE_ROOT;
 		};
-		0DDF0F1D2334F7E600564156 /* tabris_app_test */ = {
-			isa = PBXGroup;
-			children = (
-				0DDF0F1E2334F7E600564156 /* tabris_app_test.m */,
-				0DDF0F202334F7E600564156 /* Info.plist */,
-			);
-			path = tabris_app_test;
-		};
 		0DCB57121FB1A5D7003C6A6B /* Tabris */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +140,6 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* __PROJECT_NAME__.app */,
-				0DDF0F1C2334F7E500564156 /* tabris_app_test.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,7 +156,6 @@
 				307C750510C5A3420062BCA9 /* Plugins */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
-				0DDF0F1D2334F7E600564156 /* tabris_app_test */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -260,24 +232,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0DDF0F1B2334F7E500564156 /* tabris_app_test */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0DDF0F272334F7E600564156 /* Build configuration list for PBXNativeTarget "tabris_app_test" */;
-			buildPhases = (
-				0DDF0F182334F7E500564156 /* Sources */,
-				0DDF0F192334F7E500564156 /* Frameworks */,
-				0DDF0F1A2334F7E500564156 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0DDF0F222334F7E600564156 /* PBXTargetDependency */,
-			);
-			name = tabris_app_test;
-			productName = tabris_app_test;
-			productReference = 0DDF0F1C2334F7E500564156 /* tabris_app_test.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		1D6058900D05DD3D006BFB54 /* __PROJECT_NAME__ */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "__PROJECT_NAME__" */;
@@ -307,11 +261,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				TargetAttributes = {
-					0DDF0F1B2334F7E500564156 = {
-						CreatedOnToolsVersion = 10.3;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 1D6058900D05DD3D006BFB54;
-					};
 					1D6058900D05DD3D006BFB54 = {
 						ProvisioningStyle = Automatic;
 					};
@@ -322,7 +271,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
-			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
@@ -333,7 +281,6 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* __PROJECT_NAME__ */,
-				0DDF0F1B2334F7E500564156 /* tabris_app_test */,
 			);
 		};
 /* End PBXProject section */
@@ -356,13 +303,6 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0DDF0F1A2334F7E500564156 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -408,14 +348,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0DDF0F182334F7E500564156 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0DDF0F1F2334F7E600564156 /* tabris_app_test.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -433,11 +365,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0DDF0F222334F7E600564156 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1D6058900D05DD3D006BFB54 /* __PROJECT_NAME__ */;
-			targetProxy = 0DDF0F212334F7E600564156 /* PBXContainerItemProxy */;
-		};
 		301BF551109A68C00062928A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CordovaLib;
@@ -446,84 +373,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0DDF0F232334F7E600564156 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = tabris_app_test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.eclipsesource.tabris-app-test";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/__PROJECT_NAME__.app/__PROJECT_NAME__";
-			};
-			name = Debug;
-		};
-		0DDF0F242334F7E600564156 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = tabris_app_test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.eclipsesource.tabris-app-test";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/__PROJECT_NAME__.app/__PROJECT_NAME__";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
@@ -665,15 +514,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0DDF0F272334F7E600564156 /* Build configuration list for PBXNativeTarget "tabris_app_test" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0DDF0F232334F7E600564156 /* Debug */,
-				0DDF0F242334F7E600564156 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "__PROJECT_NAME__" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
