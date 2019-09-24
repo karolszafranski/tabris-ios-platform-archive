@@ -225,9 +225,6 @@ exports.createProject = function (project_path, package_name, project_name, opts
     shell.mkdir(project_path);
     shell.cp('-rf', path.join(project_template_dir, 'www'), project_path);
 
-    shell.mkdir(project_path);
-    shell.cp('-rf', path.join(project_template_dir, 'tabris_app_test'), project_path);
-
     // Copy project template files
     copyTemplateFiles(project_path, project_name, project_template_dir, package_name);
 
