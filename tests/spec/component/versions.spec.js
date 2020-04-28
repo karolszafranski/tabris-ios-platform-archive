@@ -20,6 +20,8 @@
 var rewire = require('rewire');
 var versions = rewire('../../../bin/templates/scripts/cordova/lib/versions');
 
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 60000;
+
 // These tests can not run on windows.
 if (process.platform === 'darwin') {
     describe('versions', function () {
