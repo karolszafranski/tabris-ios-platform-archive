@@ -20,6 +20,8 @@
 var semver = require('semver');
 var versions = require('../../../bin/templates/scripts/cordova/lib/versions');
 
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
+
 // These tests can not run on windows.
 if (process.platform === 'darwin') {
     describe('versions', function () {
