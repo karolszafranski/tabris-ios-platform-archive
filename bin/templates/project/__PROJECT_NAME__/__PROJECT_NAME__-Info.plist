@@ -43,5 +43,13 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>This permission is requested only for development purposes, if you plan to use this feature in the final product, please update the description accordingly. https://docs.tabris.com/latest/permissions.html</string>
+
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This permission is requested only for development purposes, if you plan to use this feature in the final product, please update the description accordingly. https://docs.tabris.com/latest/permissions.html</string>
+
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>This permission is requested only for development purposes, if you plan to use this feature in the final product, please update the description accordingly. https://docs.tabris.com/latest/permissions.html</string>
 </dict>
 </plist>
